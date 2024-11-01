@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Chick Larbi Tebessi </title>
+        <link type="text/css" rel="stylesheet" href="static/css/first.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "15%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button" style="background-color: rgb(190, 188, 188);">home</a>
+            <a href="#" class="w3-bar-item w3-button">sing in</a>
+            <a href="#" class="w3-bar-item w3-button">about covid</a>
+            <a href="#" class="w3-bar-item w3-button">about covid vaccin</a>
+            <a href="#" class="w3-bar-item w3-button">QnA</a>
+            <a href="#" class="w3-bar-item w3-button">contact us</a>
+        </div>
+        <div class="w3-teal">
+            <div class="top">
+                <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                <a herf="#"  id="home" target="_blank">home</a>
+                <a herf="http://e-mail.univ-tebessa.dz/"  id="email" target="_blank">email</a>
+                <a herf="http://dspace.univ-tebessa.dz:8080/xmlui/"  id="dspace" target="_blank">Dspace</a>
+                <a herf="http://tawassol.univ-tebessa.dz/q2a/"  id="tawassol" target="_blank">tawassol</a>
+                <a herf="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"  id="oms" target="_blank">OMS</a>
+                <a herf="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiVxKeP9pL1AhXM8eAKHS4yAtEQFnoECAMQAQ&url=https%3A%2F%2Fwww.sante.gov.dz%2F&usg=AOvVaw23AaC_IQs5rCMRFnuASmQe"  id="sente" target="_blank">sente</a>
+                <a href="https://www.facebook.com/LarbiTebessiUniversity/" id="facebook" target="_blank"><img src="{{ url_for('static', filename='media/facebook.png')}}" width="40" height="40"/></a>
+                <a href="https://twitter.com/LarbiTebessi" id="twitter" target="_blank"><img src="{{ url_for('static', filename='media/twitter.png')}}" width="40" height="40" /></a>
+                <a href="https://www.instagram.com/ularbitebessi/" id="instagram" target="_blank"><img src="{{ url_for('static', filename='media/instagram.png')}}" width="40" height="40"/></a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjO2tek0P3uAhUP7qQKHaK7ANMQFjAAegQIAhAD&url=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fcentre-universitaire-larbi-tebessi-de-tebessa%2F&usg=AOvVaw1TgJaM79T69NNJH7nzddjW" id="linkedin" target="_blank"><img src="{{ url_for('static', filename='media/linkedin.png')}}" width="40" height="40"/></a>
+                <a href="https://www.youtube.com/c/LarbiTebessiUniversityTebessa/videos" id="youtube" target="_blank"><img src="{{ url_for('static', filename='media/youtube.png')}}" width="40" height="40" target="_blank"></a>
+            </div>
+        </div>
+        <div class="first_div">
+            <p style="font-size: 200%;">Chick Larbi Tebessi University</p>
+            <p>Corona Virus Vaccin Center</p>
+        </div>
+        <div class="corona">
+            <p style="font-size: 150%;">Corona virus</p>
+            <img id="img_vir" src="static/media/icons8-virus-100.png">
+            <p style="font-size: 130%;">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.</p>
+            <input type="button" id="more-1" value="Read more"> 
+        </div>
+        <div class="anti-corona">
+            <p style="font-size: 150%;">Vaccin</p>
+            <img id="img_anti" src="static/media/icons8-vaccine-64.png">
+            <p style="font-size: 130%;">Equitable access to safe and effective vaccines is critical to ending the COVID-19 pandemic, so it is hugely encouraging to see so many vaccines proving and going into development. WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines. </p>
+            <input type="button" id="more-2" value="Read more"> 
+        </div>
+        <div class="QnA">
+            <p style="font-size: 150%;">QnA</p>
+            <p style="font-size: 130%;"> test test test test test test test test test test test test test test test test test testtest test test test test test</p>
+            <input type="button" id="more-3" value="Read more">
+        </div>
+    </body>
+</html>
