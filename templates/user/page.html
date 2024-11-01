@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Chick Larbi Tebessi </title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/page.css')}}">
+    </head>
+    <body>
+        <div class="head">
+            <div class="left">
+                <img src="{{ url_for('static', filename='media/index1.png')}}" id="img1"/>
+                <p>république algérienne démocratique et populaire</p>
+                <p>minister de l'enseignement supérieur</p>
+                <p>université chick larbi tebessi</p>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='media/index2.png')}}" id="img2"/>
+                <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+                <p>وزارة التعليم العالي و البحث العلمي</p>
+                <p>جامعة الشيخ العربي التبسي</p>
+            </div>
+            <div class="title">
+                <p>شهادة تلقيح</p>
+                <p>Certificat de vaccination</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="fr">
+                <p>nom et prénom:  {{  nom  }}  {{  prenom  }}</p>
+                <p>matricule:  {{  matricule  }}</p>
+                <p>date et lieu de néssence:  {{  dateness  }}  {{  wilaya  }}-{{  comune  }}</p>
+                <p>section: {{  facul  }} - {{  depa  }}</p>
+                <p>anneé universitaire: {{  anne  }}</p>
+                <p>vacciner le :</p>
+            </div>
+            <div class="ar">
+                <p>:الاسم و اللقب</p>
+                <p>:رقم التسجيل</p>
+                <p>:تاريخ و مكان الميلاد</p>
+                <p>:شعبة</p>
+                <p>:السنة الجامعية</p>
+                <p>:تم التلقيح يوم</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>بتاريخ/le : . . . . / . . / . . </p>
+        </div>
+    </body>
+</html>

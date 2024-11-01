@@ -1,0 +1,59 @@
+.head{
+    border-bottom: solid 3px black;
+}
+.left{
+    float: left;
+    width: 550px;
+}
+.left p{
+    margin-left: 30%;
+}
+.right{
+    float: right;
+    width: 550px;
+    text-align: right;
+}
+#img2{
+    float: right;
+    width: 25%;
+}
+#img1{
+    float: left;
+    width: 25%;
+}
+.title{
+    font-size: 150%;
+    width: 20%;
+    margin-left: 40%;
+    padding-top: 6%;
+}
+.title p{
+    margin: 0.1%;
+    text-align: center;
+}
+.fr{
+    float: left;
+    margin-top: 2.5%;
+    width: 50%;
+    font-size: 110%;
+}
+.fr p{
+    margin: 5%;
+    margin-left: 25%;
+}
+.ar{
+    float: right;
+    text-align: right;
+    margin-top: 2.5%;
+    width: 50%;
+    font-size: 110%;
+}
+.ar p{
+    margin: 5%;
+    margin-right: 25%;   
+}
+.footer{
+    font-size: 110%;
+    margin-left: 20%;
+    margin-top: 30%;
+}

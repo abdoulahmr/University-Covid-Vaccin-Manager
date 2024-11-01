@@ -1,0 +1,27 @@
+body{
+    background-image: url("../media/Science_vaccine_118385790.webp");
+    font-family: "Roboto", Sans-serif;
+    background-size: cover;
+
+}
+#home{
+    margin-right: 1%;
+}
+#email{
+    margin-right: 1%;
+}
+#dspace{
+    margin-right: 1%;
+}
+#tawassol{
+    margin-right: 1%;
+}
+#oms{
+    margin-right: 1%;
+}
+#sente{
+    margin-right: 1%;
+}
+#facebook{
+    margin-left: 54%;
+}

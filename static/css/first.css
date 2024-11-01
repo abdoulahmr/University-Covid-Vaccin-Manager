@@ -1,0 +1,134 @@
+body{
+    background-image: url("../media/Science_vaccine_118385790.webp");
+    font-family: "Roboto", Sans-serif;
+    background-size: cover;
+
+}
+#home{
+    margin-right: 1%;
+}
+#email{
+    margin-right: 1%;
+}
+#dspace{
+    margin-right: 1%;
+}
+#tawassol{
+    margin-right: 1%;
+}
+#oms{
+    margin-right: 1%;
+}
+#sente{
+    margin-right: 1%;
+}
+#facebook{
+    margin-left: 54%;
+}
+.first_div{
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    text-align: center;
+    background-image: url("../media/01_01_2022\ 22_10_22.png");
+    background-size: cover;
+}
+.first_div p{
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.corona{
+    margin-top: 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 25%;
+    height: 600px;
+    margin-left: 8%;
+    float: left;
+}
+.corona p{
+    color: #000000;
+    margin: 10%;
+}
+#img_vir{
+    float: right;
+    margin-right: 10%;
+    width: 30%;
+}
+#more-1{
+    margin-left: 10%;
+    width: 40%;
+    height: 50px;
+    margin-top: 10%;
+    background-color: #00c59f;
+    color: white;
+}
+#more-1:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+.anti-corona{
+    margin-top: 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 25%;
+    height: 600px;
+    float: left;
+    margin-left: 5%;
+}
+.anti-corona p{
+    color: #000000;
+    margin: 10%;
+}
+#img_anti{
+    float: right;
+    margin-right: 10%;
+    width: 30%;
+}
+#more-2{
+    margin-left: 10%;
+    width: 40%;
+    height: 50px;
+    margin-top: 10%;
+    background-color: #00c59f;
+    color: white;
+}
+#more-2:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+.QnA{
+    margin-top: 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 25%;
+    height: 600px;
+    margin-left: 5%;
+    float: left;
+}
+.QnA p{
+    color: #000000;
+    margin: 10%;
+}
+#more-3{
+    margin-left: 10%;
+    width: 40%;
+    height: 50px;
+    margin-top: 72%;
+    background-color: #00c59f;
+    color: white;
+}
+#more-3:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}

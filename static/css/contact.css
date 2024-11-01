@@ -1,0 +1,72 @@
+body{
+    background-image: url("../media/Science_vaccine_118385790.webp");
+    font-family: "Roboto", Sans-serif;
+    background-size: cover;
+
+}
+#home{
+    margin-right: 1%;
+}
+#email{
+    margin-right: 1%;
+}
+#dspace{
+    margin-right: 1%;
+}
+#tawassol{
+    margin-right: 1%;
+}
+#oms{
+    margin-right: 1%;
+}
+#sente{
+    margin-right: 1%;
+}
+#facebook{
+    margin-left: 54%;
+}
+.first{
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.first p{
+    font-size: 200%;
+    margin-left: 5%;
+}
+.second{
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+.second p{
+    font-size: 200%;
+    margin-left: 5%;
+}
+.third{
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.third p{
+    font-size: 200%;
+    margin-left: 5%;
+}
+.fourth{
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.fourth p{
+    font-size: 200%;
+    margin-left: 5%;
+}

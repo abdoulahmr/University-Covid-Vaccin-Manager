@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Chick Larbi Tebessi </title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/add.css')}}">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">            
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "13%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="/admin" class="w3-bar-item w3-button">home</a>
+            <a href="/admin/add_student" class="w3-bar-item w3-button" style="background-color: rgb(190, 188, 188);">add student</a>
+            <a href="/admin/add_techer" class="w3-bar-item w3-button">add techer</a>
+            <a href="/admin/add_worker" class="w3-bar-item w3-button">add worker</a>
+            <a href="#" class="w3-bar-item w3-button">show all client</a>
+            <a href="#" class="w3-bar-item w3-button">statistics</a>
+        </div>
+        <div class="w3-teal">
+            <div class="top">
+                <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                <a herf="/"  id="home" target="_blank">home</a>
+                <a herf="http://e-mail.univ-tebessa.dz/"  id="email" target="_blank">email</a>
+                <a herf="http://dspace.univ-tebessa.dz:8080/xmlui/"  id="dspace" target="_blank">Dspace</a>
+                <a herf="http://tawassol.univ-tebessa.dz/q2a/"  id="tawassol" target="_blank">tawassol</a>
+                <a herf="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"  id="oms" target="_blank">OMS</a>
+                <a herf="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiVxKeP9pL1AhXM8eAKHS4yAtEQFnoECAMQAQ&url=https%3A%2F%2Fwww.sante.gov.dz%2F&usg=AOvVaw23AaC_IQs5rCMRFnuASmQe"  id="sente" target="_blank">sente</a>
+                <a href="https://www.facebook.com/LarbiTebessiUniversity/" id="facebook" target="_blank"><img src="{{ url_for('static', filename='media/facebook.png')}}" width="40" height="40"/></a>
+                <a href="https://twitter.com/LarbiTebessi" id="twitter" target="_blank"><img src="{{ url_for('static', filename='media/twitter.png')}}" width="40" height="40" /></a>
+                <a href="https://www.instagram.com/ularbitebessi/" id="instagram" target="_blank"><img src="{{ url_for('static', filename='media/instagram.png')}}" width="40" height="40"/></a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjO2tek0P3uAhUP7qQKHaK7ANMQFjAAegQIAhAD&url=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fcentre-universitaire-larbi-tebessi-de-tebessa%2F&usg=AOvVaw1TgJaM79T69NNJH7nzddjW" id="linkedin" target="_blank"><img src="{{ url_for('static', filename='media/linkedin.png')}}" width="40" height="40"/></a>
+                <a href="https://www.youtube.com/c/LarbiTebessiUniversityTebessa/videos" id="youtube" target="_blank"><img src="{{ url_for('static', filename='media/youtube.png')}}" width="40" height="40" target="_blank"></a>
+            </div>
+        </div>
+        <form method="post">
+            <div class="text">
+                <p>Add Student</p>
+            </div>
+            <div class="contact">
+                <p style="font-size: 200%;">Login information</p>
+                <div class="email">
+                    <p>email:</p>
+                    <input type="text" id="e-mail" name="email" required>
+                </div>
+                <div class="password">
+                    <p>password:</p>
+                    <input type="text" id="password" name="password" required>
+                </div>
+            </div>
+            <div class="prsonal-info">
+                <p style="font-size: 200%;">Personal information</p>
+                <div class="mat">
+                    <p>Numéro de matriculation:</p>
+                    <input type="text" id="matricule" name="matricule" required>
+                </div>
+                <div class="nom-uti">    
+                    <p>le nom:</p>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="pr-uti">
+                    <p>prénom:</p>
+                    <input type="text" id="prnom" name="prnom" required>
+                </div>
+                <div class="sexe">
+                    <p>sexe:</p>
+                    <input type="Radio" name="check" value="male" style="display: inline-block;">male
+                    <input type="Radio" name="check" value="female" style="display: inline-block;">female
+                    <input type="Radio" name="check" value="other" style="display: inline-block;">othre
+                </div>
+                <div class="date-uti">
+                    <p>date de néssence: </p>
+                    <input type="date" id="date-ness" name="dateness" required>
+                </div>
+                <div class="wi">
+                    <p>lieu de nessence:</p>
+                    <select id="wilaya" name="wilaya" required>
+                        <option value="w1">Adrar</option>
+                        <option value="w1">Chlef</option>
+                        <option value="w1">Laghouat</option>
+                        <option value="w1">Oum El Bouaghi</option>
+                        <option value="w1">Batna</option>
+                        <option value="w1">Béjaïa</option>
+                        <option value="w1">Biskra</option>
+                        <option value="w1">Béchar</option>
+                        <option value="w1">Blida</option>
+                        <option value="w1">Bouïra</option>
+                        <option value="w1">Tamanrasset</option>
+                        <option value="w1">Tébessa</option>
+                        <option value="w1">Tlemcen</option>
+                        <option value="w1">Tiaret</option>
+                        <option value="w1">Tizi Ouzou</option>
+                        <option value="w1">Algiers</option>
+                        <option value="w1">Djelfa</option>
+                        <option value="w1">Jijel</option>
+                        <option value="w1">Sétif</option>
+                        <option value="w1">Saïda</option>
+                        <option value="w1">Skikda</option>
+                        <option value="w1">Sidi Bel Abbès</option>
+                        <option value="w1">Annaba</option>
+                        <option value="w1">Guelma</option>
+                        <option value="w1">Constantine</option>
+                        <option value="w1">Médéa</option>
+                        <option value="w1">Mostaganem</option>
+                        <option value="w1">M'Sila</option>
+                        <option value="w1">Mascara</option>
+                        <option value="w1">Ouargla</option>
+                        <option value="w1">Oran</option>
+                        <option value="w1">El Bayadh</option>
+                        <option value="w1">Illizi</option>
+                        <option value="w1">Bordj Bou Arréridj</option>
+                        <option value="w1">Boumerdès</option>
+                        <option value="w1">El Tarf</option>
+                        <option value="w1">Tindouf</option>
+                        <option value="w1">Tissemsilt</option>
+                        <option value="w1">El Oued</option>
+                        <option value="w1">Khenchela</option>
+                        <option value="w1">Souk Ahras</option>
+                        <option value="w1">Tipaza</option>
+                        <option value="w1">Mila</option>
+                        <option value="w1">Aïn Defla</option>
+                        <option value="w1">Naâma</option>
+                        <option value="w1">Aïn Témouchent</option>
+                        <option value="w1">Ghardaïa</option>
+                        <option value="w1">Relizane</option>
+                        <option value="w1">El M'Ghair</option>
+                        <option value="w1">El Menia</option>
+                        <option value="w1">Ouled Djellal</option>
+                        <option value="w1">Bordj Baji Mokhtar</option>
+                        <option value="w1">Béni Abbès</option>
+                        <option value="w1">Timimoun</option>
+                        <option value="w1">Touggourt</option>
+                        <option value="w1">Djanet</option>
+                        <option value="w1">In Salah</option>
+                        <option value="w1">In Guezzam</option>
+                    </select>
+                </div>
+                <div class="com">
+                    <p>comune:</p>
+                    <input type="text" id="comune" name="comune" required>
+                </div>
+            </div>
+            <div class="univ">
+                <p style="font-size: 200%;">Universy information</p>
+                <div class="fac">
+                    <p>choisir la facultier:</p>
+                    <select id="facul" name="facul" required>
+                        <option value="f1">Sciences et technologie</option>
+                        <option value="f2">Sciences exactes et sciences de la nature et de la vie</option>
+                        <option value="f3">Sciences économiques et sciences commerciales et sciences de gestion</option>
+                        <option value="f4">Lettres et langues </option>
+                        <option value="f5">Sciences sociales et humaines</option>
+                        <option value="f6">Droit et sciences politiques</option>
+                        <option value="f7">Institut des sciences et techniques des activités physiques et sportives</option>
+                        <option value="f8">Institut des mines</option>
+                    </select>
+                </div>
+                <div class="dep">
+                    <p>choisir le département:</p>
+                    <select id="depa" name="depa" required>
+                        <option value="d1">Sciences et technologie</option>
+                        <option value="d2">Génie mécanique</option>
+                        <option value="d3">Génie électrique </option>
+                        <option value="d4">Génie civil</option>
+                        <option value="d5">Architecture</option>
+                        <option value="d6">Sciences de la nature et de la vie</option>
+                        <option value="d7">Sciences de la terre et de l’univers</option>
+                        <option value="d8">Mathématiques et informatique</option>
+                        <option value="d9">Sciences de la matière</option>
+                        <option value="d10">Biologie appliquée</option>
+                        <option value="d11">Biologie des êtres vivants</option>
+                        <option value="d12">Tronc Commun Sciences Economiques, Sciences Commerciales Et Sciences De Gestion</option>
+                        <option value="d13">Sciences Economiques</option>
+                        <option value="d14">Sciences Commerciales</option>
+                        <option value="d15">Sciences De Gestion</option>
+                        <option value="d16">Finance et comptabilité</option>
+                        <option value="d17">Langues et littérature arabe</option>
+                        <option value="d18">Lettre et langue française</option>
+                        <option value="d19">Lettre et langue anglaise</option>
+                        <option value="d20">Histoire et archéologie</option>
+                        <option value="d21">Sciences de l’information et de communication</option>
+                        <option value="d22">Bibliothéconomie</option>
+                        <option value="d23">Sociologie</option>
+                        <option value="d24">Psychologie</option>
+                        <option value="d25">Philosophie</option>
+                        <option value="d26">Sciences humaines</option>
+                        <option value="d27">Sciences sociales</option>
+                        <option value="d28">Sciences politiques</option>
+                        <option value="d29">Droit</option>
+                        <option value="d30">Institut des sciences et techniques des activités physiques et sportives</option>
+                        <option value="d31">Institut des mines</option>
+                    </select>
+                </div>
+                <div class="anne-uti">
+                    <p>années universitaire: </p>
+                    <select id="anne" name="anne" required>
+                        <option value="1L"> 1er Licence</option>
+                        <option value="2L"> 2eme Licence</option>
+                        <option value="2L"> 3eme Licence</option>
+                        <option value="1M"> 1er Master</option>
+                        <option value="2M"> 1eme Master</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sub">
+                <input type="submit" id="sub-btn" value="submit">
+            </div>
+        </form>
+    </body>
+</html>

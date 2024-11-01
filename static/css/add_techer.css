@@ -1,0 +1,116 @@
+body{
+    background-image: url("../media/Science_vaccine_118385790.webp");
+}
+#home{
+    margin-right: 1%;
+}
+#email{
+    margin-right: 1%;
+}
+#dspace{
+    margin-right: 1%;
+}
+#tawassol{
+    margin-right: 1%;
+}
+#oms{
+    margin-right: 1%;
+}
+#sente{
+    margin-right: 1%;
+}
+#facebook{
+    margin-left: 54%;
+}
+.text{
+    background-color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+    height: 100px;
+}
+.text p{
+    margin-left: 10%;
+    font-size: 200%;
+}
+.prsonal-info{
+    background-color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+}
+.prsonal-info *{
+    margin-left: 10%;
+    margin-top: 1.5%;
+    font-size: 110%;
+}
+#nom{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+#prnom{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+#date-ness{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 20%;
+}
+#wilaya{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+    background-color:   white;
+}
+#comune{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-bottom: 10%;
+}
+.contact{
+    background-color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+}
+.contact *{
+    margin-left: 10%;
+    margin-top: 1.5%;
+    font-size: 110%;
+}
+#password{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-bottom: 10%;
+}
+#e-mail{
+    border: transparent;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-bottom: 10%;
+}
+.sub{
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#sub-btn{
+    margin-top: 1.5%;
+    margin-left: 35%;
+    margin-bottom: 1.5%;
+    width: 30%;
+    height: 50px;
+    background-color: #00c59f;
+    color: white;
+}
+#sub-btn:hover{
+    background-color: black;
+    transition: 0.2s;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{  nom  }} {{ prenom  }} </title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/user-info.css')}}">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">            
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "15%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="/" class="w3-bar-item w3-button" style="background-color: rgb(190, 188, 188);">home</a>
+            <a href="#" class="w3-bar-item w3-button">get an appointement</a>
+            <a href="#" class="w3-bar-item w3-button">about covid</a>
+            <a href="#" class="w3-bar-item w3-button">about covid vaccin</a>
+            <a href="#" class="w3-bar-item w3-button">QnA</a>
+            <a href="#" class="w3-bar-item w3-button">about</a>
+            <a href="#" class="w3-bar-item w3-button">contact us</a>
+        </div>
+        <div class="w3-teal">
+            <div class="top">
+                <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                <a herf="/"  id="home" target="_blank">home</a>
+                <a href="/" id="home" target="_blank">home</a>
+                <a href="http://e-mail.univ-tebessa.dz/" id="email" target="_blank">email</a>
+                <a href="http://dspace.univ-tebessa.dz:8080/xmlui/"  id="dspace" target="_blank">Dspace</a>
+                <a href="http://tawassol.univ-tebessa.dz/q2a/"  id="tawassol" target="_blank">tawassol</a>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"  id="oms" target="_blank">OMS</a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiVxKeP9pL1AhXM8eAKHS4yAtEQFnoECAMQAQ&url=https%3A%2F%2Fwww.sante.gov.dz%2F&usg=AOvVaw23AaC_IQs5rCMRFnuASmQe"  id="sente" target="_blank">sente</a>
+                <a href="https://www.facebook.com/LarbiTebessiUniversity/" id="facebook" target="_blank"><img src="{{ url_for('static', filename='media/facebook.png')}}" width="40" height="40"/></a>
+                <a href="https://twitter.com/LarbiTebessi" id="twitter" target="_blank"><img src="{{ url_for('static', filename='media/twitter.png')}}" width="40" height="40" /></a>
+                <a href="https://www.instagram.com/ularbitebessi/" id="instagram" target="_blank"><img src="{{ url_for('static', filename='media/instagram.png')}}" width="40" height="40"/></a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjO2tek0P3uAhUP7qQKHaK7ANMQFjAAegQIAhAD&url=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fcentre-universitaire-larbi-tebessi-de-tebessa%2F&usg=AOvVaw1TgJaM79T69NNJH7nzddjW" id="linkedin" target="_blank"><img src="{{ url_for('static', filename='media/linkedin.png')}}" width="40" height="40"/></a>
+                <a href="https://www.youtube.com/c/LarbiTebessiUniversityTebessa/videos" id="youtube" target="_blank"><img src="{{ url_for('static', filename='media/youtube.png')}}" width="40" height="40" target="_blank"></a>
+            </div>
+        </div>
+        <div id="user">
+            <div id="mat">
+                <p>{{  matricule  }}</p>
+            </div>
+            <div id="personal_info">
+                <p id="title">personal info</p>
+                <p>nom: {{  nom  }}</p>
+                <p>prenom: {{  prenom  }}</p>
+                <p>dateness: {{  dateness  }}</p>
+                <p>sexe: {{  sexe  }}</p>
+            </div>
+            <div id="local">
+                <p id="title">local</p>
+                <p>{{  wilaya  }}</p>
+                <p>{{  comune  }}</p>
+            </div>
+            <div id="colage">
+                <p id="title">colage</p>
+                <p>{{  facul  }}</p>
+                <p>{{  depa  }}</p>
+                <p>{{  anne  }}</p>
+            </div>
+            <div id="get">
+                <a herf='#'>get a sertification</a>
+            </div>
+        </div>
+         
+    </body>
+</html>
