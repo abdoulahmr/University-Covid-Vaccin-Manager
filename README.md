@@ -1,6 +1,6 @@
 # Chick Larbi Tebessi University - Corona Virus Vaccin Center
 
-![Alt text](https://www.univ-tebessa.dz/wp-content/uploads/2022/12/logo-LTU.png)
+![Chick Larbi Tebessi University Logo](https://www.univ-tebessa.dz/wp-content/uploads/2022/12/logo-LTU.png)
 
 Welcome to the Chick Larbi Tebessi University Corona Virus Vaccin Center webpage. This project serves as an informational hub for the COVID-19 pandemic and vaccination resources available at the university.
 
